@@ -1,0 +1,41 @@
+.how-to-buy-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    gap: 10%;
+    margin-bottom: 40px;
+}
+
+.how-to-buy-content-container {
+    width: 45%;
+    height: auto;
+    padding: 3% 3%;
+}
+
+.how-to-buy-content-image-container {
+    width: 100%;
+}
+
+.how-to-buy-content-image-container img {
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .how-to-buy-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .how-to-buy-content-container {
+        width: 100%;
+    }
+
+    .how-to-buy-content-image-container img {
+        width: 35%;
+    }
+}

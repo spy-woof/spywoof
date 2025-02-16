@@ -1,0 +1,32 @@
+.roadmap-section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    gap: 3%;
+}
+
+.roadmap-content-container {
+    width: 30%;
+    height: 100%;
+    padding: 3% 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .roadmap-section-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .roadmap-content-container {
+        width: 100%;
+        height: auto;
+        padding: 3% 1%;
+    }
+    
+}

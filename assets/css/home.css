@@ -1,0 +1,81 @@
+#home-title {
+    font-size: 100px;
+}
+
+#home {
+    padding-top: 1%;
+    height: auto;
+    background: url("../images/sections/home-page/home/background-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.home-section-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.home-section-content-container-discription,
+.home-section-content-container-buttons {
+    margin-top: 0;
+}
+
+.home-section-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+}
+
+.home-section-content-container-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: left;
+    justify-items: left;
+    width: 100%;
+    height: auto;
+    gap: 2%;
+}
+
+.home-section-content-container-discription {
+    width: 90%;
+}
+
+.home-section-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #home-title {
+        font-size: 55px;
+    }
+
+    .home-section-content {
+        flex-direction: column;
+    }
+
+    .home-section-content-container,
+    .home-section-image-container {
+        width: 100%;
+    }
+    
+    .home-section-content-container {
+        margin-bottom: 40px;
+    }
+}

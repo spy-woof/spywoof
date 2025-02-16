@@ -1,0 +1,269 @@
+:root {
+    --title: 54px;
+    --sub-title: 30px;
+    --text: 22px;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --title: 42px;
+        --sub-title: 26px;
+        --text: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --title: 36px;
+        --sub-title: 22px;
+        --text: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --title: 28px;
+        --sub-title: 20px;
+        --text: 16px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2c94e;
+}
+
+#how-to-buy,
+#roadmap {
+    background: linear-gradient(to bottom, #f2c94e, #fee8a2);
+}
+
+#about,
+#tokenomics,
+#footer {
+    background: #fee8a2;
+}
+
+@font-face {
+    font-family: 'Komika Hand Bold';
+    src: url('../fonts/KOMIKAHB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Komika Hand';
+    src: url('../fonts/KOMIKAH_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'Komika Hand Bold', sans-serif;
+    font-size: var(--title);
+    color: #FFFFFF;
+    text-shadow:
+        -1.5px -1.5px 0 black,
+        1.5px -1.5px 0 black,
+        -1.5px 1.5px 0 black,
+        1.5px 1.5px 0 black;
+    margin-bottom: 2%;
+}
+
+.sub-title {
+    font-family: 'Komika Hand Bold', sans-serif;
+    font-size: var(--sub-title);
+    color: #000000;
+}
+
+.text {
+    font-family: 'Komika Hand', sans-serif;
+    font-size: var(--text);
+    color: #000000;
+}
+
+.center-aligned-self {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.left-aligned-self {
+    justify-self: left;
+    align-self: left;
+    text-align: left;
+}
+
+.right-aligned-self {
+    justify-self: right;
+    align-self: right;
+    text-align: right;
+}
+
+.center-aligned-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-aligned-content {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.right-aligned-content {
+    justify-content: right;
+    align-items: right;
+    text-align: left;
+}
+
+.section {
+    padding: 2% 0 4% 0;
+}
+
+.button-socials {
+    border-radius: 100px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: var(--text);
+    box-shadow: 0px 4px 0px #000;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.button-socials:hover {
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+.button-socials img {
+    width: 35px;
+    height: 35px;
+    color: black;
+    align-items: center !important;
+    align-content: center !important;
+    justify-self: center !important;
+    justify-content: center !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .button-socials {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+    }
+
+    .button-socials img {
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        align-content: center;
+        justify-self: center;
+        justify-content: center;
+    }
+}
+
+.button-regular {
+    border-radius: 15px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: var(--text);
+    box-shadow: 0px 4px 0px #000;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Komika Hand', sans-serif;
+    color: #000000;
+    height: auto;
+    width: auto;
+}
+
+.button-regular:hover {
+    box-shadow: none;
+    transform: translate(0px, 4px);
+}
+
+.container-rounded {
+    border-radius: 100px;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 0px #000;
+}
+
+.container-rounded:hover {
+    box-shadow: none;
+    transform: translate(0px, 10px);
+}
+
+.container-regular {
+    border-radius: 20px;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 0px #000;
+}
+
+.container-regular:hover {
+    box-shadow: none;
+    transform: translate(0px, 10px);
+}
+
+.background-white {
+    background-color: #FFFFFF;
+}
+
+.background-dark-yellow {
+    background-color: #F2C94E;
+}
+
+.background-darkest-yellow {
+    background-color: #fdd403;
+}
+
+.background-light-yellow {
+    background-color: #fee8a2;
+}
+
+.global-all-section-content-container {
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .global-all-section-content-container {
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 5%;
+        padding: 0 0;
+    }
+}
